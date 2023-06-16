@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'api-key.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -56,7 +58,7 @@ class _MyAppState extends State<MyApp> {
       uri,
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer $chatgpt_apikey",
       },
       body: json.encode(body),
     );

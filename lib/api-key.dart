@@ -1,1 +1,1 @@
-var chatgpt_apikey=
+var chatgpt_apikey="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";
